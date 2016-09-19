@@ -1,0 +1,4 @@
+# spring cloud应用名称
+spring:
+  application:
+    name: eurake-sentence
