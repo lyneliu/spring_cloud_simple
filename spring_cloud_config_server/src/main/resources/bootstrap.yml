@@ -1,0 +1,4 @@
+#spring boot应用信息
+spring:
+  application:
+    name: config-server

@@ -1,0 +1,18 @@
+#不启动spring security
+security:
+  basic:
+    enabled: true
+
+#配置spring cloud config
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/LyneLiu/spring_cloud_simple/
+          search-paths: spring-cloud-config
+      enabled: true
+
+#设置端口
+server:
+  port: 8088
