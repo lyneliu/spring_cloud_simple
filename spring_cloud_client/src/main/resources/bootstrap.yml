@@ -1,0 +1,12 @@
+#自定义应用启动端口
+server:
+  port: 8091
+
+
+# 调用配置信息
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      uri: http://localhost:8088
