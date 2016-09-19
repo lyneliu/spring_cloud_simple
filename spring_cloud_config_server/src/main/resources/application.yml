@@ -11,7 +11,7 @@ spring:
         git:
           uri: https://github.com/LyneLiu/spring_cloud_simple/
           search-paths: spring-cloud-config
-      enabled: true
+      enabled: false  #作用？？？
 
 #设置端口
 server:
