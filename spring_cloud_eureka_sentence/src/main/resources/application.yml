@@ -1,0 +1,9 @@
+# 配置eureka server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+
+# 配置当前应用端口
+server:
+  port: 9090
