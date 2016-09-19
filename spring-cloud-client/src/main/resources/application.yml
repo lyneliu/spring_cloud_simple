@@ -1,0 +1,14 @@
+
+#≤ª∆Ù∂Øspring security
+security:
+  basic:
+    enabled: false
+
+#≈‰÷√spring cloud config
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/LyneLiu/spring_cloud_simple/
+          searchPaths: spring_cloud_config
