@@ -1,7 +1,0 @@
-
-# 忽略上传文件
-.idea
-
-*.iml
-
-target
