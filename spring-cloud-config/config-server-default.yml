@@ -1,2 +1,18 @@
+# 1、配置文件命名规范
+# {application}映射到Config客户端的spring.application.name属性
+# {profile}映射到Config客户端的spring.profiles.active属性，可以用来区分环境，比如dev，test，produce等等
+# {label}映射到Git服务器的commit id,分支名称或者tag，默认值为master
+# 2、访问规则：
+# /{application}/{profile}[/{label}]
+# /{application}-{profile}.yml
+# /{label}/{application}-{profile}.yml
+# /{application}-{profile}.properties
+# /{label}/{application}-{profile}.properties
+# 3、举例说明
+# http://127.0.0.1:9955/jdbc/dev/master 可以拿到jdbc-dev.properties master分支对应文件的值
+# http://127.0.0.1:9955/jdbc/dev/develop可以拿到jdbc-dev.properties develop分支对应文件的值 (前提是要有这个分支)
+# http://127.0.0.1:9955/jdbc/test/master 可以拿到jdbc-test.properties master分支对应文件的值
+# http://127.0.0.1:9955/jdbc/production/master 可以拿到jdbc-production.properties master分支对应文件的值
+
 ---
 lucky-word: luffy
