@@ -2,6 +2,8 @@
 spring:
   application:
     name: eureka-verb
+  profiles:
+    active: verb
 
 # spring application port
 server:

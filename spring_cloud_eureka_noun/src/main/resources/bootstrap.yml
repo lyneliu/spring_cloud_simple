@@ -2,6 +2,8 @@
 spring:
   application:
     name: eureka-noun
+  profiles:
+    active: noun
 
 # spring application port
 server:

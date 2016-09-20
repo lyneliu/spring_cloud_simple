@@ -2,6 +2,8 @@
 spring:
   application:
     name: eureka-subject
+  profiles:
+    active: subject
 
 # spring application port
 server:
