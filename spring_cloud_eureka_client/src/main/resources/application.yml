@@ -1,5 +1,4 @@
 # Eureka Server
-# 多个server确保高可用性
 eureka:
   client:
     service-url:
@@ -9,4 +8,3 @@ words: one, two, three, four, five
 
 server:
   port: ${PORT:${SERVER_PORT:0}}
-#  这个的意思是随机指定个没使用的端口
