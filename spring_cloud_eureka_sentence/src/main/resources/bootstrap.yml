@@ -5,7 +5,7 @@ spring:
 
 # spring application port
 server:
-  port: 9090
+  port: 9020
 
 
 # 调用配置信息
@@ -14,4 +14,4 @@ spring:
     name: config-server
   cloud:
     config:
-      uri: http://localhost:9001
+      uri: http://localhost:9030
