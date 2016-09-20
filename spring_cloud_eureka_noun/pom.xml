@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.lyne</groupId>
-	<artifactId>spring_cloud_eureka_subject</artifactId>
+	<artifactId>spring_cloud_eureka_noun</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring_cloud_eureka_subject</name>
+	<name>spring_cloud_eureka_noun</name>
 	<description>spring cloud eureka client for services</description>
 
 	<parent>
@@ -30,9 +30,9 @@
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
-		</dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

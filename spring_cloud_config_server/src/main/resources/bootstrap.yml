@@ -1,4 +1,8 @@
-#spring boot应用信息
+# spring boot应用信息
 spring:
   application:
     name: config-server
+
+# port
+server:
+  port: 9030

@@ -1,3 +1,17 @@
+# spring application name
 spring:
   application:
-    name: eureka-client
+    name: eureka-subject
+
+# spring application port
+server:
+  port: 9010
+
+
+# 调用配置信息
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      uri: http://localhost:9001

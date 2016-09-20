@@ -1,0 +1,35 @@
+# eureka server of spring boot client
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+      
+---
+# subject profile
+spring:
+  profiles: subject
+words: I,You,He,She,It
+
+---
+# verb profile 
+spring:
+  profiles: verb
+words: ran,knew,had,saw,bought
+
+---
+# article profile 
+spring:
+  profiles: article
+words: a,the
+
+---
+# adjective profile 
+spring:
+  profiles: adjective
+words: reasonable,leaky,suspicious,ordinary,unlikely
+
+---
+# noun profile 
+spring:
+  profiles: noun
+words: boat,book,vote,seat,backpack,partition,groundhog  

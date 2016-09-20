@@ -1,11 +1,11 @@
-# spring cloud应用名称
+# spring application name
 spring:
   application:
-    name: eurake-sentence
+    name: eureka-article
 
 # spring application port
 server:
-  port: 9090
+  port: 9012
 
 
 # 调用配置信息
