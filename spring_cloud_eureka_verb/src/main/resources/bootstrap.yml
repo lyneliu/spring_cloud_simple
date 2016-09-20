@@ -2,18 +2,12 @@
 spring:
   application:
     name: eureka-verb
+  cloud:
+      config:
+        uri: http://localhost:9030
   profiles:
     active: verb
 
 # spring application port
 server:
   port: 9011
-
-
-# 调用配置信息
-spring:
-  application:
-    name: config-server
-  cloud:
-    config:
-      uri: http://localhost:9030

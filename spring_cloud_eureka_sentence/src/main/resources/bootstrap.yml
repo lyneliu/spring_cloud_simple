@@ -2,16 +2,10 @@
 spring:
   application:
     name: eurake-sentence
+  cloud:
+    config:
+      uri: http://localhost:9030
 
 # spring application port
 server:
   port: 9020
-
-
-# 调用配置信息
-spring:
-  application:
-    name: config-server
-  cloud:
-    config:
-      uri: http://localhost:9030

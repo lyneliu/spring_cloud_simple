@@ -2,18 +2,12 @@
 spring:
   application:
     name: eureka-adjective
+  cloud:
+      config:
+        uri: http://localhost:9030
   profiles:
     active: adjective
 
 # spring application port
 server:
   port: 9013
-
-
-# 调用配置信息
-spring:
-  application:
-    name: config-server
-  cloud:
-    config:
-      uri: http://localhost:9030

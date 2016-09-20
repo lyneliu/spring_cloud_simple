@@ -2,18 +2,12 @@
 spring:
   application:
     name: eureka-subject
+  cloud:
+      config:
+        uri: http://localhost:9030
   profiles:
     active: subject
 
 # spring application port
 server:
   port: 9010
-
-
-# 调用配置信息
-spring:
-  application:
-    name: config-server
-  cloud:
-    config:
-      uri: http://localhost:9030
