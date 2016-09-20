@@ -20,19 +20,21 @@ public class HomeController {
 
     @RequestMapping("/sentence")
     public String getSentence() {
-        return getWord("eureka-subject") + " "
+        /*return getWord("eureka-subject") + " "
                 + getWord("eureka-verb") + " "
                 + getWord("eureka-article") + " "
                 + getWord("eureka-adjective") + " "
-                + getWord("eureka-noun") + ".";
+                + getWord("eureka-noun") + ".";*/
+        return getWord("eureka-client");
     }
 
     private String getWord(String service) {
         List<ServiceInstance> list = client.getInstances(service);
         if (list != null && list.size() > 0) {
             URI uri = list.get(0).getUri();
+            String url = uri.toString() + "/word";
             if (uri != null) {
-                return (new RestTemplate()).getForObject(uri, String.class);
+                return (new RestTemplate()).getForObject(url, String.class);
             }
         }
 
