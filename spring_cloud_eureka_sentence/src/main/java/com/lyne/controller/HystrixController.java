@@ -15,7 +15,7 @@ public class HystrixController {
     @Autowired
     private HystrixService hystrixService;
 
-    @RequestMapping(value = "/hystrix", method = RequestMethod.GET)
+    @RequestMapping(value = "/hystrix-service", method = RequestMethod.GET)
     public String add() {
         return hystrixService.wordService();
     }
