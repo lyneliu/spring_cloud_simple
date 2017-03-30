@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/LyneLiu/spring_cloud_simple/
+          uri: https://git.oschina.net/.lyne/spring_cloud_simple/
           search-paths: spring-cloud-config
         svn:
           uri:
