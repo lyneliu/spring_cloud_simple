@@ -11,16 +11,6 @@ spring:
         git:
           uri: https://git.oschina.net/.lyne/spring_cloud_simple/
           search-paths: spring-cloud-config
-          repos:
-            team-a:
-              pattern: team-a-*
-              uri: http://git/team-a/config-repo.git
-            team-a:
-              pattern: team-b-*
-              uri: http://git/team-b/config-repo.git
-            team-a:
-              pattern: team-c-*
-              uri: http://git/team-c/config-repo.git
         svn:
           uri:
           search-paths:
